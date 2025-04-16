@@ -10,7 +10,6 @@ TZ='Africa/Johannesburg'; export TZ
 date
 sleep 2
 
-
 array=()
 for i in {a..z} {A..Z} {0..9}; 
    do
